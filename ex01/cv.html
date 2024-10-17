@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Résumé</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #4a90e2;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #4a90e2;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            gap: 1rem;
+        }
+        .profile {
+            flex: 1 1 35%;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+        }
+        .details {
+            flex: 1 1 60%;
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+        }
+        td:last-child {
+            border-color: #424242;
+        }
+        ul, ol {
+            margin: 0 0 20px 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .profile {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            th, td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>John Doe</h1>
+    <h2>Senior Web Developer</h2>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture">
+        <h2>Contact Information</h2>
+        <p>Email: john.doe@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Location: San Francisco, CA</p>
+        <h2>Social Media</h2>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+        <h2>Certifications</h2>
+        <ul>
+            <li>Certified JavaScript Developer</li>
+            <li>React.js Certification</li>
+            <li>Full-Stack Web Development Certification</li>
+        </ul>
+    </div>
+
+    <div class="details">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React, Angular, Vue.js</li>
+            <li>Node.js, Express.js</li>
+            <li>RESTful APIs & GraphQL</li>
+            <li>Responsive Design & Accessibility</li>
+            <li>Version Control (Git, GitHub)</li>
+            <li>Agile & Scrum Methodologies</li>
+        </ul>
+
+        <h2>Experience</h2>
+        <ol>
+            <li>Senior Front-End Developer at XYZ Corp (2023-Present)</li>
+            <li>Lead Back-End Developer at ABC Inc (2021-2023)</li>
+            <li>Full-Stack Developer at Tech Solutions (2019-2021)</li>
+            <li>Intern at Web Innovations (2018-2019)</li>
+        </ol>
+
+        <h2>Education</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Year</th>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2023</td>
+                    <td>Bachelor of Science in Computer Science</td>
+                    <td>University of Example</td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Associate Degree in Web Development</td>
+                    <td>Community College</td>
+                </tr>
+                <tr>
+                    <td>2018</td>
+                    <td>High School Diploma</td>
+                    <td>Example High School</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Personal Portfolio:</strong> A showcase of my work using React.</li>
+            <li><strong>E-Commerce Website:</strong> Developed a full-stack application with Node.js and MongoDB.</li>
+            <li><strong>Blog Platform:</strong> Created a responsive blog platform using Angular.</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
