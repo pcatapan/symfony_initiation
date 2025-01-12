@@ -1,57 +1,34 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rival Company Page</title>
-    <link rel="stylesheet" href="path/to/your/styles.css">
+    <title>Skill Chart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Company Logo</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <h2>Welcome to Our Company</h2>
-            <p>Your success is our priority.</p>
-            <a href="#services" class="cta-button">Learn More</a>
-        </section>
-
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We provide top-notch services to our clients.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Services</h2>
-            <div class="service-item">
-                <h3>Service 1</h3>
-                <p>Detail about service 1.</p>
-            </div>
-            <div class="service-item">
-                <h3>Service 2</h3>
-                <p>Detail about service 2.</p>
-            </div>
-            <div class="service-item">
-                <h3>Service 3</h3>
-                <p>Detail about service 3.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Company Name. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <ul>
+            <li>
+                <h2>Frontend</h2>
+                <label for="html5">HTML5</label>
+                <progress id="html5" class="html5" value="80" max="100"></progress>
+                <label for="css3">CSS3</label>
+                <progress id="css3" class="css3" value="60" max="100"></progress>
+                <label for="jquery">jQuery</label>
+                <progress id="jquery" class="jquery" value="50" max="100"></progress>
+            </li>
+            
+            <li>
+                <h2>Backend</h2>
+                <label for="python">Python</label>
+                <progress id="python" class="python" value="75" max="100"></progress>
+                <label for="php">PHP</label>
+                <progress id="php" class="php" value="65" max="100"></progress>
+                <label for="node-js">Node.js</label>
+                <progress id="node-js" class="node-js" value="35" max="100"></progress>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
